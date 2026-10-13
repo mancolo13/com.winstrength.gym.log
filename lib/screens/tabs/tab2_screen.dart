@@ -15,7 +15,7 @@ class _Tab2ScreenState extends State<Tab2Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('WinStrength • 1RM')),
+      appBar: AppBar(title: const Text('Win • 1RM')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
