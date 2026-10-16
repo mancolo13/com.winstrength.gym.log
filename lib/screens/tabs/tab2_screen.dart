@@ -22,10 +22,10 @@ class _Tab2ScreenState extends State<Tab2Screen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _chip('All', 0),
-              _chip('Active', 1),
-              _chip('Hot', 2),
-              _chip('Saved', 3),
+              _chip('Chest', 0),
+              _chip('Back & Pull', 1),
+              _chip('Legs Squat', 2),
+              _chip('Shoulders', 3),
             ],
           ),
           const SizedBox(height: 16),
@@ -47,7 +47,7 @@ class _Tab2ScreenState extends State<Tab2Screen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('1RM Record #${i + 201}', style: const TextStyle(fontWeight: FontWeight.bold)),
+                      Text(const ['Barbell Bench 120kg', 'Deadlift Heavy 180kg', 'Back Squat 140kg', 'Overhead Press 75kg', 'Weighted Pull-ups +25kg'][i % 5], style: const TextStyle(fontWeight: FontWeight.bold)),
                       Text('Stage ${i + 1} • Verified status', style: const TextStyle(fontSize: 12, color: Colors.white60)),
                     ],
                   ),
